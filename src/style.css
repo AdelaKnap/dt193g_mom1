@@ -29,7 +29,7 @@ nav a:hover {
 }
 
 /* Hamburgerikonen */
-.navbar-toggler {
+.toggler {
     display: none;
     background: none;
     border: none;
@@ -37,7 +37,7 @@ nav a:hover {
 }
 
 /* Linjerna i ikonen */
-.navbar-toggler span {
+.toggler span {
     display: block;
     width: 25px;
     height: 3px;
@@ -96,9 +96,9 @@ tr:hover {
     color: white;
 }
 
-/* Mediaquerys */
+/* Media-querys */
 @media (max-width: 768px) {
-    .navbar-toggler {
+    .toggler {
         display: inline-block;
     }
 

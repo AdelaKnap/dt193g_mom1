@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Funktion för att toggla hamburger-menyn
-document.getElementById("navbar-toggler").addEventListener("click", function (event) {
+document.getElementById("toggler").addEventListener("click", function (event) {
     event.preventDefault();
     const nav = document.getElementById("nav");
     nav.classList.toggle("show");

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap</title>
+    <title>Om sidan</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet"
@@ -36,7 +36,7 @@
                             <a class="nav-link" href="milligram.html">Milligram</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="about.html">Om</a>
+                            <a class="nav-link active" aria-current="page" href="about.html">Om sidan</a>
                         </li>
                     </ul>
                 </div>
@@ -49,18 +49,70 @@
         <div class="container text-center mt-4 mb-2">
             <h1>Om sidan</h1>
             <hr class="border-dark">
+
+
+            <div class="container mb-5">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/microsoft.jpg" class="d-block w-100" alt="Microsoft logga">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/microsoft1.jpg" class="d-block w-100" alt="Microsoft kretskort">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
             <h2>Publicering</h2>
-            <p class="txt">Webbplatsen är publicerad via...<br>
-                Jag har valt Azure.
-                Beskriv den publicerings-plattform du valt för att publicera dina webbplats.
-                Ta med saker som kod-stöd (vilka programmerings-språk som går att använda), kostnad, för- och nackdelar
-                och andra saker du tycker är utmärkande.
-                Beskriv även hur arbetssättet är för att publicera arbetsfiler till denna webbhost.</p>
+            <p class="mb-4 txt">Webbplatsen är publicerad via publicerings-plattformen Azure för studenter och det är
+                första gången jag testar att den här plattformen.
+                Azure fungerar för flera olika programmeringsspråk som till exempel JavaScript, Node.js, Python, C#,
+                PHP och .NET. <br>
+                För databaser finns det stöd för både relationsdatabaser som MariaDB, MySQL, PostgreSQL
+                och för NoSQL som Cosmos DB. Azure Student är gratis till en viss gräns och man får ett visst "belopp"
+                att använda. <br>
+                För att publicera till Azure använder jag GitHub tillsammans med Azure App Services för att
+                deploya koden. Varje gång jag gör en build och push till Github-repot uppdateras webbplatsen, och
+                publiceras,
+                via CI/CD-pipelines.
+            </p>
+
+            <h3>Fördelar</h3>
+            <p class="mb-4 txt">
+                En fördel med Azure är att det finns väldigt många möjligheter, val och funktionerna som gör det
+                möjligt att skapa en bredd av applikationer/program. Azure stödjer även automatisering och
+                CI/CD vilket gör det väldigt smidigt att använda med GitHub-repos och uppdateringar av koden på ett
+                enkelt sätt.
+            </p>
+
+            <h3>Nackdelar</h3>
+            <p class="mb-5 txt">
+                Nackdelen med Azure, enligt mig som nybörjare, är att det är så mycket val och funktioner
+                så det blir lite överväldigande och svårt att veta/navigera hur man ska gå till väga.
+            </p>
         </div>
+
     </main>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-3 fixed-bottom">
+    <footer class="bg-dark text-white py-3">
         <div class="container">
             <div class="text-center">
                 <p>DT193G Fullstack-utveckling &copy; 2024 Adela Knap</p>
