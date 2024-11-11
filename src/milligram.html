@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milligram</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="js/main.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <button id="navbar-toggler" class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="navbar-hamburger" id="nav">
+                <ul class="navbar-nav">
+                    <li><a href="index.html" class="nav-link">Startsida</a></li>
+                    <li><a href="bootstrap.html" class="nav-link">Bootstrap</a></li>
+                    <li><a href="milligram.html" id="active" class="nav-link">Milligram</a></li>
+                    <li><a href="about.html" class="nav-link">Om</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <h1 class="text">Milligram</h1>
+        <hr class="border-dark">
+
+        <p class="txt">Mina upplevelser av Milligram är att det är ett väldigt enkelt och smidigt ramverk för just
+            specifika delar som tabeller och formulär.
+            Det är inget ramverk jag skulle ha valt för att skapa en hel webbplats men för specifika delar är det
+            väldigt lätt och framför allt snabbt att använda. En annan del jag uppskattar med Milligram är att det är
+            väldigt lätt att använda och kombinera med egen CSS. Nackdelen är då att ramverket är relativt begränsat i vad
+            som finns att tillgå att det inte finns så många valmöjligheter.<br><br>
+            <a href="https://milligram.io/" target="_blank">Läs mer om Milligram</a>
+        </p>
+
+        <hr class="border-dark">
+
+        <!-- Tabell -->
+        <section>
+            <h2 class="text">Hundar för adoption</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Namn</th>
+                        <th>Ålder</th>
+                        <th>Ras</th>
+                        <th>Färg</th>
+                        <th>Beskrivning</th>
+                        <th>Kastrerad</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                    <tr>
+                        <td>Nelson</td>
+                        <td>5</td>
+                        <td>Dalmatiner</td>
+                        <td>Svart-vit</td>
+                        <td>Lekfull, energisk och tycker om att träna.</td>
+                        <td>Ja</td>
+                    </tr>
+                    <tr>
+                        <td>Dusty</td>
+                        <td>7</td>
+                        <td>Pudel</td>
+                        <td>Svart</td>
+                        <td>Lugn och tycker inte om stökiga miljöer.</td>
+                        <td>Nej</td>
+                    </tr>
+                    <tr>
+                        <td>Gipsy</td>
+                        <td>10</td>
+                        <td>Dalmatiner</td>
+                        <td>Svart-vit</td>
+                        <td>Glad och älskar att kela.</td>
+                        <td>Ja</td>
+                    </tr>
+                    <tr>
+                        <td>Frida</td>
+                        <td>6</td>
+                        <td>Siberian husky</td>
+                        <td>Vit-grå</td>
+                        <td>Tycker om att upptäcka nya miljöer och äventyr.</td>
+                        <td>Nej</td>
+                    </tr>
+                    <tr>
+                        <td>Brasse</td>
+                        <td>2</td>
+                        <td>Labrador</td>
+                        <td>Brun</td>
+                        <td>Älskar alla människor och djur och är väldigt matglad.</td>
+                        <td>Nej</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Formulär för att lägga till nya hundar -->
+        <section>
+            <h3 class="text">Lägg till nya hundar</h3>
+            <form id="addForm">
+                <label for="name">Namn</label>
+                <input type="text" id="name" placeholder="Namn" required>
+
+                <label for="age">Ålder</label>
+                <input type="number" id="age" placeholder="Ålder" required>
+
+                <label for="breed">Ras</label>
+                <input type="text" id="breed" placeholder="Ras" required>
+
+                <label for="color">Färg</label>
+                <select id="color" required>
+                    <option value="" selected disabled>Välj färg</option>
+                    <option>Svart</option>
+                    <option>Vit</option>
+                    <option>Brun</option>
+                    <option>Grå</option>
+                    <option>Svart-vit</option>
+                    <option>Övriga färger</option>
+                </select>
+
+                <label for="description">Beskrivning</label>
+                <textarea id="description" placeholder="Skriv en beskrivning här..." rows="5" required></textarea>
+
+                <label>
+                    <input type="checkbox" id="checkbox">
+                    Kastrerad
+                </label>
+
+                <button type="submit" class="button-primary">Lägg till</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <p>DT193G Fullstack-utveckling &copy; 2024 Adela Knap</p>
+    </footer>
+
+</body>
+
+</html>
